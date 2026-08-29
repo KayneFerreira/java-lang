@@ -1,7 +1,9 @@
 /**
- * A versão 25 do Java introduz as classes declaradas implicitamente e métodos
- * main de instância, o que dispensa o uso de declaração da classe Main e o
- * método main tradicional.
+ * Introduzido na versão 21 e estabelecido na versão 25 LTS, é possível
+ * declarar a classe main de forma implícita. Os métodos main de instância
+ * dispensam a necessidade de declarar a classe e o método main da forma
+ * tradicional:
+ * "public class Main { public static void main(String [] args) {} }".
  */
 
 void main() {

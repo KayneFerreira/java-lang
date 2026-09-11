@@ -1,13 +1,13 @@
 /*
-    * Todos os métodos de construção de strings possuem funções de verificação,
+    *** Todos os métodos de construção de strings possuem funções de verificação,
     comparação, conversões, etc. embutidas.
  */
 @SuppressWarnings("all")
 void main() {
     /*
-        Strings são fáceis de usar e mais rápidas de programar, porém, sofrem
+        advanced.strings.Strings são fáceis de usar e mais rápidas de programar, porém, sofrem
         de baixo desempenho nos casos em que múltiplas concatenações são
-        necessárias. Strings são imutáveis.
+        necessárias. advanced.strings.Strings são imutáveis.
      */
     String string1 = new String("Novo objeto String (método tradicional)");
     String string2 = "Novo objeto String (método rápido)";
@@ -23,7 +23,7 @@ void main() {
     /*
         StringBuffers, assim como StringBuilders, precisam ser instanciadas,
         possuem um desempenho um pouco inferior ao StringBuilder, mas ainda
-        muito superior às Strings em relação a múltiplas concatenações. E no
+        muito superior às advanced.strings.Strings em relação a múltiplas concatenações. E no
         caso das StringBuffers, elas são 'thread safe',
      */
     StringBuffer stringBuffer1 = new StringBuffer();

@@ -1,7 +1,7 @@
 /*
-Lambda Expressions permitem passar uma função como argumento para um método ou
-armazená-la em uma variável de forma curta e direta, sem a necessidade de criar
-classes inteiras ou usar classes anônimas verbosas.
+    Lambda Expressions permitem passar uma função como argumento para um método ou
+    armazená-la em uma variável de forma curta e direta, sem a necessidade de criar
+    classes inteiras ou usar classes anônimas verbosas.
  */
 @SuppressWarnings("all")
 void main() {

@@ -22,10 +22,12 @@ static void shippingStrategy() {
     double costPerKg = 5.0;
     double serviceCost;
 
-    serviceCost = strategy1.calculate(costPerKg);
+    Shipping shipping = new Shipping(strategy1);
+    serviceCost = shipping.calculate(costPerKg);
     System.out.printf("\nValor do frete regular: R$%.2f\n", serviceCost);
 
-    serviceCost = strategy2.calculate(costPerKg);
+    shipping = new Shipping(strategy2);
+    serviceCost = shipping.calculate(costPerKg);
     System.out.printf("\nValor do frete expresso: R$%.2f\n", serviceCost);
 }
 

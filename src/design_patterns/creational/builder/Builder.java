@@ -1,7 +1,9 @@
 import design_patterns.creational.builder.UserEntity;
 
 /**
- *
+ * O padrão Builder é um padrão de projeto criacional que resolve o problema de construir objetos complexos
+ * passo a passo, evitando construtores gigantescos (conhecidos como _telescoping constructors_) ou objetos
+ * em estado inconsistente.
  */
 void main() {
 

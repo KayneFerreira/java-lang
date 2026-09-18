@@ -2,18 +2,15 @@ package advanced.enumarators;
 
 /**
  *  Abstract Enum:
- *  Os métodos são criados dentro de cada opção e sobrescritos para funcionarem conforme
- *  o chamado. Dessa forma é possível implementar apenas uma função com a mesma
- *  assinatura, porém com diferentes operações ou comportamentos.
+ *  Os métodos são criados dentro de cada opção e sobrescritos para funcionarem conforme o chamado. Dessa forma é
+ *  possível implementar apenas uma função com a mesma assinatura, porém com diferentes operações ou comportamentos.
  *  Para as chamadas, um método abstrato precisa ser implementado ({@link #apply(int, int)}).
 
- *  Neste exemplo, cada opção possui um código, descrição e um símbolo o qual ele
- *  representa. Cada um dos atributos deve ser injetado pelo construtor, assim como um
- *  'get' deve ser implementado para acessar os atributos das opções.
+ *  Neste exemplo, cada opção possui um código, descrição e um símbolo o qual ele representa. Cada um dos atributos deve
+ *  ser injetado pelo construtor, assim como um 'get' deve ser implementado para acessar os atributos das opções.
 
- *  Para o acesso às opções via código, é necessário o uso de um método que avalie
- *  as opções disponíveis e retorne esta opção de acordo com o código correspondente
- *  ({@link #getByCode(int)}).
+ *  Para o acesso às opções via código, é necessário o uso de um método que avalie as opções disponíveis e retorne esta
+ *  opção de acordo com o código correspondente ({@link #getByCode(int)}).
 
  *  @see CalculatorEnumAbstractSimplified para uma versão simplificada do enum
  */

@@ -3,8 +3,8 @@ package advanced.enumarators;
 import java.util.function.BiFunction;
 
 /**
- *  Versão simplificada do {@link CalculatorEnumLambda}.
- *  Possui apenas as opções, as injeções e o método de chamada {@link #apply(int, int)}.
+ *  Versão simplificada do {@link CalculatorEnumLambda}. Possui apenas as opções, as injeções e o método de chamada
+ *  {@link #apply(int, int)}.
  *  Método de chamada:
  *      CalculatorEnumLambdaSimplified.SUM.apply(n1, n2);
  */

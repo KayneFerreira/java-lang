@@ -4,13 +4,12 @@ void main() {
     patternMatchingInstanceof();
 }
 
-/**
- *    A partir da versão 17 do Java, foi introduzida a funcionalidade "Pattern Matching".
- *    Ela permite filtrar tipos diretamente sem a necessidade de fazer casts explicitos
- *    no corpo do bloco. Ela também aceita o case 'null' para evitar chamadas extras de
- *    verificação antes do bloco. Também é possível usar cláusulas de guarda, que adiciona
- *    condições boolean aos casos diretamente no case (ex: case String s when s.length() > 5).
- *    Além de dispensar a necessidade do uso da keyword 'break'.
+/*
+ *  A partir da versão 17 do Java, foi introduzida a funcionalidade "Pattern Matching". Ela permite filtrar tipos
+ *  diretamente sem a necessidade de fazer casts explicitos no corpo do bloco. Ela também aceita o case 'null' para
+ *  evitar chamadas extras de verificação antes do bloco. Também é possível usar cláusulas de guarda, que adiciona
+ *  condições boolean aos casos diretamente no case (ex: case String s when s.length() > 5). Além de dispensar a
+ *  necessidade do uso da keyword 'break'.
  */
 static void patternMatchingSwitch() {
     Scanner input = new Scanner(System.in);

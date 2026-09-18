@@ -1,4 +1,3 @@
-import design_patterns.structural.facade.services.*;
 import design_patterns.structural.facade.OrderFacade;
 
 /**
@@ -13,29 +12,6 @@ import design_patterns.structural.facade.OrderFacade;
 void main() {
     String clientId = "USR-123";
 
-    // =========================================================================
-    // SEM FACADE
-    // Quem chama precisa instanciar, conhecer e ordenar todas as classes
-    // =========================================================================
-    System.out.println("--- Sem Facade ---");
-    StockService stock = new StockService();
-    PaymentService payment = new PaymentService();
-    ShipmentService shipment = new ShipmentService();
-
-    boolean stockOk = stock.holdItems(clientId);
-    if (stockOk) {
-        boolean paid = payment.processPayment(clientId, 150.0);
-        if (paid) {
-            shipment.generateOrder(clientId);
-            System.out.println("Pedido finalizado com sucesso!");
-        }
-    }
-
-    // =========================================================================
-    // COM FACADE
-    // A complexidade das 3 classes e da ordem de chamada fica escondida
-    // =========================================================================
-    System.out.println("\n--- Com Facade ---");
     OrderFacade orderFacade = new OrderFacade();
     boolean success = orderFacade.checkout(clientId, 150.0);
 

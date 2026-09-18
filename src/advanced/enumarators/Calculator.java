@@ -3,16 +3,16 @@ import advanced.enumarators.CalculatorEnumAbstractSimplified;
 import advanced.enumarators.CalculatorEnumLambda;
 
 /**
- *  Enums são frequentemente utilizados para implementar regras de negócio que possuem
- *  múltiplas variantes para um mesmo contexto, permitindo encapsular o comportamento de
- *  cada opção e executá-lo de forma padronizada através de uma única interface ou método.
+ *  Enums são frequentemente utilizados para implementar regras de negócio que possuem múltiplas variantes para um mesmo
+ *  contexto, permitindo encapsular o comportamento de cada opção e executá-lo de forma padronizada através de uma única
+ *  interface ou método.
 
- *  Esta classe (main), serve apenas para definir a chamada das funções através das opções
- *  disponíveis, as quais se apresentam com um código (valor numérico) para cada função.
- *  As explicações sobre as implementações estão em seus devidos arquivos enums.
+ *  Esta classe (main), serve apenas para definir a chamada das funções através das opções disponíveis, as quais se
+ *  apresentam com um código (valor numérico) para cada função. As explicações sobre as implementações estão em seus
+ *  devidos arquivos enums.
 
- *  A seguir temos dois exemplos de como utilizar enums de forma funcional. A primeira
- *  utiliza métodos abstratos, e a segunda utiliza lambda expressions.
+ *  A seguir temos dois exemplos de como utilizar enums de forma funcional. A primeira utiliza métodos abstratos,
+ *  e a segunda utiliza lambda expressions.
  *  @see CalculatorEnumAbstract
  *  @see CalculatorEnumLambda
  */

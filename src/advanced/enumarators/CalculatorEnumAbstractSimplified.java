@@ -1,8 +1,7 @@
 package advanced.enumarators;
 
 /**
- *  Versão simplificada do {@link CalculatorEnumAbstract}.
- *  Possui apenas as opções e o método abstrato para chamada.
+ *  Versão simplificada do {@link CalculatorEnumAbstract}. Possui apenas as opções e o método abstrato para chamada.
  *  Método de chamada:
  *      CalculatorEnumAbstractSimplified.SUM.apply(n1, n2);
  */

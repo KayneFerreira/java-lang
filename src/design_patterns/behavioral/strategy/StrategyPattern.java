@@ -2,12 +2,8 @@ import design_patterns.behavioral.strategy.robot_behaviour.*;
 import design_patterns.behavioral.strategy.shipping.*;
 
 /**
- * O Strategy é um padrão de projeto comportamental que isola diferentes algoritmos (ou regras de negócio) em classes
- * separadas que implementam uma mesma interface, tornando-os intercambiáveis.
- * Ele tem o propósito de eliminar o uso de condicionais 'if/else' ou 'switch' que tendem a expandir tanto de forma
- * vertical quanto horizontal, desacoplando o código que decide qual regra usar do código que executa a regra.
- * Isso facilita a manutenção e a criação de novas lógicas sem alterar o código existente (respeitando o princípio
- * Open/Closed).
+ * O Factory Method é um padrão de projeto criacional que tem como objetivo fornecer uma interface para criar objetos
+ * em uma classe mãe, mas permitir que as subclasses ou métodos utilitários alterem o tipo de objetos que serão criados.
  */
 void main() {
 //    robotBehaviour();
@@ -26,7 +22,7 @@ static void shippingStrategy() {
     serviceCost = shipping.calculate(costPerKg);
     System.out.printf("\nValor do frete regular: R$%.2f\n", serviceCost);
 
-    shipping = new Shipping(strategy2);
+    shipping.setStrategy(strategy2);
     serviceCost = shipping.calculate(costPerKg);
     System.out.printf("\nValor do frete expresso: R$%.2f\n", serviceCost);
 }

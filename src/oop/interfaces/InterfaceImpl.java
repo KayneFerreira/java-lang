@@ -1,8 +1,8 @@
 package oop.interfaces;
 
 /*
-Em Java, não é possível que uma classe herde de múltiplas classes (herança
-múltipla), porém é possível implementar múltiplas interfaces.
+ * Em Java, não é possível que uma classe herde de múltiplas classes (herança múltipla), porém é possível implementar
+ * múltiplas interfaces.
  */
 public final class InterfaceImpl implements FirstInterface, SecondInterface {
 

@@ -6,14 +6,16 @@ public class UserEntity {
     private final String email;
     private final Integer age;
 
+    // Construtor padrão privado. Acessado somente pelo builder
     private UserEntity(UserBuilder builder) {
         this.name = builder.name;
         this.email = builder.email;
         this.age = builder.age;
     }
 
+    // Classe builder estática
     public static class UserBuilder {
-        private String name;
+        private final String name;
         private String email;
         private Integer age;
 
@@ -22,11 +24,7 @@ public class UserEntity {
             this.name = name;
         }
 
-        public UserBuilder setName(String name) {
-            this.name = name;
-            return this;
-        }
-
+        // Setters constroem o objeto inteiro e retornam ele mesmo
         public UserBuilder setEmail(String email) {
             this.email = email;
             return this;
@@ -37,6 +35,7 @@ public class UserEntity {
             return this;
         }
 
+        // Retorna o objeto construído
         public UserEntity build() {
             return new UserEntity(this);
         }
